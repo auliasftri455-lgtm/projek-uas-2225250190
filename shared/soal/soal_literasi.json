@@ -1,0 +1,274 @@
+{
+  "keterangan": "Instrumen mathematical literacy KPK. Sumber: docs/01-SOAL-LATIHAN.md. Berkas ini berisi KUNCI dan RUBRIK; jangan pernah disajikan langsung ke klien.",
+  "soal": [
+    {
+      "no": 1,
+      "indikator": "MR",
+      "nama_indikator": "Mathematical Reasoning",
+      "judul": "Lampu Hias Pentas Seni",
+      "teks": "Panggung pentas seni dihiasi dua jenis lampu. Lampu merah menyala setiap 8 detik, sedangkan lampu biru menyala setiap 12 detik. Kedua lampu menyala bersamaan tepat saat acara dimulai (detik ke-0). Tiga siswa berpendapat tentang kapan kedua lampu pertama kali menyala bersamaan lagi. Rani: \"Detik ke-96, karena 8 × 12 = 96.\" Citra: \"Detik ke-48.\" Bima: \"Detik ke-24.\" Siapa yang benar? Jelaskan alasan matematis Anda.",
+      "sorotan": [
+        {"teks": "8 detik", "warna": "a"},
+        {"teks": "12 detik", "warna": "b"},
+        {"teks": "pertama kali", "warna": "c"}
+      ],
+      "tahap": [
+        {
+          "no": 1, "skor_maks": 1, "tipe": "pilihan",
+          "instruksi": "Apa yang sebenarnya ditanyakan soal ini?",
+          "opsi": [
+            "Kelipatan persekutuan 8 dan 12 yang paling kecil (KPK)",
+            "Hasil kali 8 × 12",
+            "Faktor persekutuan terbesar dari 8 dan 12 (FPB)",
+            "Sembarang kelipatan persekutuan dari 8 dan 12"
+          ],
+          "kunci": 0,
+          "rubrik": [{"poin": 1, "cek": "pilihan_benar"}]
+        },
+        {
+          "no": 2, "skor_maks": 2, "tipe": "faktorisasi_kpk",
+          "instruksi": "Hitung KPK dari 8 dan 12. Pilih caramu: faktorisasi prima atau daftar kelipatan.",
+          "bilangan": [8, 12],
+          "boleh_kelipatan": true,
+          "rubrik": [{"poin": 1, "cek": "cara_benar"}, {"poin": 1, "cek": "kpk_benar"}]
+        },
+        {
+          "no": 3, "skor_maks": 1, "tipe": "pilihan",
+          "instruksi": "Bagaimana dengan jawaban Citra (48) dan Rani (96)?",
+          "opsi": [
+            "Keduanya juga kelipatan persekutuan 8 dan 12, tetapi bukan yang pertama",
+            "Keduanya bukan kelipatan persekutuan 8 dan 12",
+            "48 benar, tetapi 96 salah karena terlalu besar",
+            "Keduanya sama benarnya dengan 24"
+          ],
+          "kunci": 0,
+          "rubrik": [{"poin": 1, "cek": "pilihan_benar"}]
+        },
+        {
+          "no": 4, "skor_maks": 1, "tipe": "urutkan",
+          "instruksi": "Urutkan ketiga jawaban dari waktu yang paling awal. Ketuk berurutan.",
+          "nilai": [96, 48, 24],
+          "satuan": "detik",
+          "rubrik": [{"poin": 1, "cek": "urutan_naik"}]
+        },
+        {
+          "no": 5, "skor_maks": 1, "tipe": "kesimpulan",
+          "instruksi": "Siapa yang benar, dan apa alasannya?",
+          "opsi_keputusan": ["Rani (detik ke-96)", "Citra (detik ke-48)", "Bima (detik ke-24)"],
+          "opsi_alasan": [
+            "Jawaban itu adalah kelipatan persekutuan yang paling kecil; jawaban lain memang kelipatan persekutuan, tetapi lebih besar",
+            "Mengalikan kedua bilangan selalu menghasilkan KPK",
+            "Jawaban yang paling kecil selalu benar",
+            "Jawaban yang di tengah-tengah paling aman"
+          ],
+          "label_teks": "Jelaskan dengan kalimatmu sendiri, termasuk mengapa 8 × 12 tidak tepat (boleh dikosongkan).",
+          "kunci_keputusan": 2,
+          "kunci_alasan": 0,
+          "nilai_keputusan": [96, 48, 24],
+          "ref": "2.kpk",
+          "rubrik": [{"poin": 1, "cek": "kesimpulan_benar"}]
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "indikator": "FS",
+      "nama_indikator": "Formulating Situations Mathematically",
+      "judul": "Kiriman Bahan Kantin",
+      "teks": "Kantin sekolah memiliki 3 petugas dan menjual roti seharga Rp3.000 per buah. Kantin menerima kiriman roti setiap 4 hari, kiriman susu setiap 6 hari, dan kiriman buah setiap 10 hari. Pada hari Senin, 3 Agustus 2026, ketiga kiriman datang bersamaan. Kepala kantin ingin menyiapkan petugas tambahan pada hari ketiga kiriman datang bersamaan lagi. Ubahlah situasi ini menjadi model matematika, lalu tentukan hari dan tanggal ketiga kiriman pertama kali datang bersamaan lagi.",
+      "sorotan": [],
+      "tahap": [
+        {
+          "no": 1, "skor_maks": 1, "tipe": "centang",
+          "instruksi": "Centang SEMUA informasi yang diperlukan untuk menjawab soal.",
+          "opsi": [
+            "Roti dikirim setiap 4 hari",
+            "Susu dikirim setiap 6 hari",
+            "Buah dikirim setiap 10 hari",
+            "Ketiganya datang bersamaan pada Senin, 3 Agustus 2026",
+            "Kantin memiliki 3 petugas",
+            "Harga roti Rp3.000 per buah"
+          ],
+          "kunci": [0, 1, 2, 3],
+          "rubrik": [{"poin": 1, "cek": "centang_tepat"}]
+        },
+        {
+          "no": 2, "skor_maks": 1, "tipe": "pilihan",
+          "instruksi": "Misalkan t = banyak hari sampai ketiga kiriman datang bersamaan lagi. Syarat apa yang harus dipenuhi t?",
+          "opsi": [
+            "t kelipatan 4, 6, dan 10 sekaligus, dan merupakan yang terkecil",
+            "t faktor dari 4, 6, dan 10",
+            "t = 4 + 6 + 10",
+            "t kelipatan 4, 6, dan 10 sekaligus, boleh yang mana saja"
+          ],
+          "kunci": 0,
+          "rubrik": [{"poin": 1, "cek": "pilihan_benar"}]
+        },
+        {
+          "no": 3, "skor_maks": 1, "tipe": "pilihan",
+          "instruksi": "Model matematika yang tepat adalah …",
+          "opsi": ["t = KPK(4, 6, 10)", "t = FPB(4, 6, 10)", "t = 4 × 6 × 10", "t = 4 + 6 + 10"],
+          "kunci": 0,
+          "rubrik": [{"poin": 1, "cek": "pilihan_benar"}]
+        },
+        {
+          "no": 4, "skor_maks": 1, "tipe": "faktorisasi_kpk",
+          "instruksi": "Selesaikan modelnya: faktorkan 4, 6, dan 10, lalu tentukan nilai t.",
+          "bilangan": [4, 6, 10],
+          "boleh_kelipatan": false,
+          "label_kpk": "t =",
+          "satuan": "hari",
+          "rubrik": [{"poin": 1, "cek": "kpk_benar"}]
+        },
+        {
+          "no": 5, "skor_maks": 1, "tipe": "tanggal",
+          "instruksi": "Tanggal berapa t hari setelah 3 Agustus 2026? (Agustus punya 31 hari, September 30 hari.)",
+          "tahun": 2026,
+          "ref": "4.kpk",
+          "mulai": "2026-08-03",
+          "rubrik": [{"poin": 1, "cek": "tanggal_dari_tahap"}]
+        },
+        {
+          "no": 6, "skor_maks": 1, "tipe": "hari",
+          "instruksi": "Hari apakah tanggal tersebut? (3 Agustus 2026 adalah hari Senin.)",
+          "opsi": ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"],
+          "ref": "4.kpk",
+          "mulai": "2026-08-03",
+          "rubrik": [{"poin": 1, "cek": "hari_dari_tahap"}]
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "indikator": "EM",
+      "nama_indikator": "Employing Mathematical Concepts, Facts, and Procedures",
+      "judul": "Menumpuk Kardus Perpustakaan",
+      "teks": "Petugas perpustakaan menumpuk kardus buku menjadi dua tumpukan bersebelahan. Tumpukan pertama hanya berisi kardus merah setinggi 18 cm. Tumpukan kedua hanya berisi kardus biru setinggi 24 cm. Petugas ingin kedua tumpukan memiliki tinggi yang sama dengan tinggi serendah mungkin. Berapa tinggi tumpukan tersebut, dan berapa banyak seluruh kardus yang dibutuhkan?",
+      "sorotan": [
+        {"teks": "18 cm", "warna": "a"},
+        {"teks": "24 cm", "warna": "b"},
+        {"teks": "serendah mungkin", "warna": "c"}
+      ],
+      "tahap": [
+        {
+          "no": 1, "skor_maks": 1, "tipe": "pilihan",
+          "instruksi": "Konsep apa yang dipakai untuk mencari tinggi tumpukan?",
+          "opsi": ["KPK(18, 24)", "FPB(18, 24)", "18 × 24", "18 + 24"],
+          "kunci": 0,
+          "rubrik": [{"poin": 1, "cek": "pilihan_benar"}]
+        },
+        {
+          "no": 2, "skor_maks": 2, "tipe": "faktorisasi_kpk",
+          "instruksi": "Faktorkan 18 dan 24, lalu tentukan KPK-nya.",
+          "bilangan": [18, 24],
+          "boleh_kelipatan": false,
+          "satuan": "cm",
+          "rubrik": [{"poin": 1, "cek": "cara_benar"}, {"poin": 1, "cek": "kpk_benar"}]
+        },
+        {
+          "no": 3, "skor_maks": 2, "tipe": "angka_ganda",
+          "instruksi": "Pakai tinggi dari langkah sebelumnya. Berapa banyak kardus yang dibutuhkan?",
+          "medan": [
+            {"id": "merah", "label": "Kardus merah", "satuan": "kardus"},
+            {"id": "biru", "label": "Kardus biru", "satuan": "kardus"},
+            {"id": "total", "label": "Total kardus", "satuan": "kardus"}
+          ],
+          "rubrik": [
+            {"poin": 1, "cek": "bagi_dari_tahap", "ref": "2.kpk", "medan": ["merah", "biru"], "pembagi": [18, 24]},
+            {"poin": 1, "cek": "jumlah_konsisten", "bagian": ["merah", "biru"], "hasil": "total"}
+          ]
+        },
+        {
+          "no": 4, "skor_maks": 1, "tipe": "angka_ganda",
+          "instruksi": "Lengkapi kesimpulanmu.",
+          "medan": [
+            {"id": "tinggi", "label": "Tinggi tumpukan", "satuan": "cm"},
+            {"id": "kardus", "label": "Banyak seluruh kardus", "satuan": "kardus"}
+          ],
+          "rubrik": [
+            {"poin": 1, "cek": "konsisten_dengan", "pasangan": [{"medan": "tinggi", "ref": "2.kpk"}, {"medan": "kardus", "ref": "3.total"}]}
+          ]
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "indikator": "IE",
+      "nama_indikator": "Interpreting, Applying, and Evaluating Mathematical Outcomes",
+      "judul": "Berlari di Lintasan Sekolah",
+      "teks": "Ani dan Budi berlari mengelilingi lintasan sekolah. Ani menyelesaikan satu putaran dalam 6 menit, sedangkan Budi dalam 8 menit. Mereka mulai bersamaan dari garis start pada pukul 07.00. Seorang siswa menghitung FPB(6, 8) = 2, lalu menyimpulkan bahwa Ani dan Budi akan bertemu lagi di garis start pada pukul 07.02. Apakah Anda setuju? Tentukan waktu yang tepat dan jelaskan alasan Anda.",
+      "sorotan": [
+        {"teks": "6 menit", "warna": "a"},
+        {"teks": "8 menit", "warna": "b"},
+        {"teks": "07.02", "warna": "c"}
+      ],
+      "tahap": [
+        {
+          "no": 1, "skor_maks": 1, "tipe": "pilihan",
+          "instruksi": "Apakah hasil pukul 07.02 masuk akal?",
+          "opsi": [
+            "Tidak, karena pada menit ke-2 Ani dan Budi belum menyelesaikan satu putaran pun",
+            "Ya, karena FPB(6, 8) = 2",
+            "Ya, karena 2 adalah faktor dari 6 dan 8",
+            "Tidak, karena seharusnya 6 + 8 = 14 menit"
+          ],
+          "kunci": 0,
+          "rubrik": [{"poin": 1, "cek": "pilihan_benar"}]
+        },
+        {
+          "no": 2, "skor_maks": 1, "tipe": "pilihan",
+          "instruksi": "Konsep apa yang tepat untuk mencari waktu bertemu di garis start?",
+          "opsi": [
+            "KPK, karena waktunya harus kelipatan 6 sekaligus kelipatan 8",
+            "FPB, karena waktunya harus membagi 6 dan 8",
+            "Perkalian 6 × 8",
+            "Penjumlahan 6 + 8"
+          ],
+          "kunci": 0,
+          "rubrik": [{"poin": 1, "cek": "pilihan_benar"}]
+        },
+        {
+          "no": 3, "skor_maks": 1, "tipe": "faktorisasi_kpk",
+          "instruksi": "Hitung KPK dari 6 dan 8.",
+          "bilangan": [6, 8],
+          "boleh_kelipatan": true,
+          "satuan": "menit",
+          "rubrik": [{"poin": 1, "cek": "kpk_benar"}]
+        },
+        {
+          "no": 4, "skor_maks": 1, "tipe": "waktu",
+          "instruksi": "Pukul berapa Ani dan Budi bertemu lagi di garis start?",
+          "ref": "3.kpk",
+          "mulai": "07.00",
+          "rubrik": [{"poin": 1, "cek": "waktu_dari_tahap"}]
+        },
+        {
+          "no": 5, "skor_maks": 1, "tipe": "angka_ganda",
+          "instruksi": "Periksa kewajaran: berapa putaran yang sudah ditempuh masing-masing saat bertemu?",
+          "medan": [
+            {"id": "ani", "label": "Putaran Ani", "satuan": "putaran"},
+            {"id": "budi", "label": "Putaran Budi", "satuan": "putaran"}
+          ],
+          "rubrik": [
+            {"poin": 1, "cek": "bagi_dari_tahap", "ref": "3.kpk", "medan": ["ani", "budi"], "pembagi": [6, 8]}
+          ]
+        },
+        {
+          "no": 6, "skor_maks": 1, "tipe": "kesimpulan",
+          "instruksi": "Apakah kamu setuju dengan kesimpulan siswa tersebut? Apa alasannya?",
+          "opsi_keputusan": ["Setuju", "Tidak setuju"],
+          "opsi_alasan": [
+            "Siswa itu tertukar FPB dengan KPK; Ani dan Budi baru bertemu di garis start setelah KPK(6, 8) menit",
+            "FPB selalu dipakai untuk soal waktu bertemu",
+            "Hasil 2 menit sudah masuk akal",
+            "Seharusnya 6 dan 8 dijumlahkan"
+          ],
+          "label_teks": "Tulis kesimpulanmu dengan kalimat sendiri (boleh dikosongkan).",
+          "kunci_keputusan": 1,
+          "kunci_alasan": 0,
+          "rubrik": [{"poin": 1, "cek": "kesimpulan_benar"}]
+        }
+      ]
+    }
+  ]
+}

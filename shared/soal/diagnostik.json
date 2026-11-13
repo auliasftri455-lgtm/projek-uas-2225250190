@@ -1,0 +1,19 @@
+{
+  "keterangan": "Diagnostik prasyarat KPK (fitur F3). Boleh dinilai di klien.",
+  "kategori": {
+    "kelipatan": "Kelipatan",
+    "faktor": "Faktor",
+    "prima": "Bilangan prima"
+  },
+  "butir": [
+    {"id": "d1", "kategori": "kelipatan", "tipe": "pilihan", "teks": "Manakah yang merupakan kelipatan 6?", "opsi": ["3", "16", "24", "32"], "kunci": 2},
+    {"id": "d2", "kategori": "kelipatan", "tipe": "angka", "teks": "Tulis kelipatan 7 yang ke-4.", "kunci": 28},
+    {"id": "d3", "kategori": "kelipatan", "tipe": "pilihan", "teks": "Bilangan 36 adalah kelipatan dari …", "opsi": ["5", "7", "8", "9"], "kunci": 3},
+    {"id": "d4", "kategori": "faktor", "tipe": "pilihan", "teks": "Manakah yang BUKAN faktor dari 24?", "opsi": ["3", "6", "9", "12"], "kunci": 2},
+    {"id": "d5", "kategori": "faktor", "tipe": "angka", "teks": "Ada berapa banyak faktor dari 12? (1, 2, …)", "kunci": 6},
+    {"id": "d6", "kategori": "faktor", "tipe": "pilihan", "teks": "Jika 5 adalah faktor dari suatu bilangan, maka bilangan itu …", "opsi": ["habis dibagi 5", "lebih kecil dari 5", "selalu ganjil", "selalu genap"], "kunci": 0},
+    {"id": "d7", "kategori": "prima", "tipe": "pilihan", "teks": "Manakah yang merupakan bilangan prima?", "opsi": ["1", "9", "15", "13"], "kunci": 3},
+    {"id": "d8", "kategori": "prima", "tipe": "pilihan", "teks": "Bilangan prima adalah bilangan yang …", "opsi": ["hanya punya dua faktor: 1 dan dirinya sendiri", "selalu ganjil", "tidak bisa dibagi", "punya banyak faktor"], "kunci": 0},
+    {"id": "d9", "kategori": "prima", "tipe": "pilihan", "teks": "Bentuk faktorisasi prima dari 12 adalah …", "opsi": ["2 × 6", "3 × 4", "2² × 3", "1 × 12"], "kunci": 2}
+  ]
+}

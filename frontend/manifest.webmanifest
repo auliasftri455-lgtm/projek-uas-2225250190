@@ -1,0 +1,15 @@
+{
+  "name": "KPK Langkah demi Langkah",
+  "short_name": "KPK Langkah",
+  "description": "Belajar KPK langkah demi langkah untuk siswa SMP",
+  "lang": "id",
+  "start_url": "/#/beranda",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fafaf7",
+  "theme_color": "#2457c5",
+  "icons": [
+    { "src": "/assets/ikon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

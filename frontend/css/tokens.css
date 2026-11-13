@@ -1,0 +1,76 @@
+/* Token desain — lihat docs/03-DESAIN.md bagian 4. Jangan menulis warna mentah di luar berkas ini. */
+:root {
+  --bg: #fafaf7;
+  --surface: #ffffff;
+  --surface-2: #f1f1ec;
+  --border: #d9d9d2;
+  --text: #1f2328;
+  --muted: #5b616b;
+  --primary: #2457c5;
+  --primary-text: #ffffff;
+  --primary-soft: #e6edfb;
+  --ok: #1f7a4d;
+  --ok-soft: #e3f3ea;
+  --warn: #b85c00;
+  --warn-soft: #fdf0e1;
+  --hl-a: #ffe08a;
+  --hl-b: #bfe3ff;
+  --hl-c: #d9f2c7;
+  --focus: #2457c5;
+
+  --font: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --fs-base: 16px;
+  --fs-soal: 17px;
+  --fs-angka: 20px;
+  --radius: 12px;
+  --gap: 16px;
+  --tap: 44px;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 2px 8px rgb(0 0 0 / 0.04);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #16181d;
+    --surface: #20232a;
+    --surface-2: #2a2e36;
+    --border: #3a3f49;
+    --text: #e8e6e1;
+    --muted: #a3a8b0;
+    --primary: #7da2ff;
+    --primary-text: #0e1420;
+    --primary-soft: #26304a;
+    --ok: #5bc08a;
+    --ok-soft: #1d3428;
+    --warn: #f0a04b;
+    --warn-soft: #3a2a17;
+    --hl-a: #6b5a1e;
+    --hl-b: #1e4a6b;
+    --hl-c: #2c5220;
+    --focus: #7da2ff;
+    --shadow: none;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #16181d;
+  --surface: #20232a;
+  --surface-2: #2a2e36;
+  --border: #3a3f49;
+  --text: #e8e6e1;
+  --muted: #a3a8b0;
+  --primary: #7da2ff;
+  --primary-text: #0e1420;
+  --primary-soft: #26304a;
+  --ok: #5bc08a;
+  --ok-soft: #1d3428;
+  --warn: #f0a04b;
+  --warn-soft: #3a2a17;
+  --hl-a: #6b5a1e;
+  --hl-b: #1e4a6b;
+  --hl-c: #2c5220;
+  --focus: #7da2ff;
+  --shadow: none;
+  color-scheme: dark;
+}

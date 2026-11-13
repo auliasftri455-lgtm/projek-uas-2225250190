@@ -1,0 +1,74 @@
+{
+  "keterangan": "Bank soal cerita latihan level 4 dan 5. Level 1-3 dibuat otomatis di frontend/js/latihan-gen.js. Boleh dinilai di klien.",
+  "level": {
+    "4": [
+      {
+        "id": "l4a",
+        "teks": "Lampu lalu lintas A berganti warna setiap 15 detik dan lampu B setiap 20 detik. Keduanya baru saja berganti bersamaan. Setelah berapa detik keduanya berganti bersamaan lagi?",
+        "sorotan": [{"teks": "15 detik", "warna": "a"}, {"teks": "20 detik", "warna": "b"}],
+        "konsep": "KPK", "bilangan": [15, 20], "jawaban": 60, "satuan": "detik"
+      },
+      {
+        "id": "l4b",
+        "teks": "Bu Sari memiliki 24 kue cokelat dan 36 kue keju. Kue akan dimasukkan ke kotak sebanyak-banyaknya, dengan isi setiap kotak sama persis. Berapa banyak kotak paling banyak?",
+        "sorotan": [{"teks": "24 kue cokelat", "warna": "a"}, {"teks": "36 kue keju", "warna": "b"}],
+        "konsep": "FPB", "bilangan": [24, 36], "jawaban": 12, "satuan": "kotak"
+      },
+      {
+        "id": "l4c",
+        "teks": "Dina berenang setiap 3 hari sekali dan Eka setiap 4 hari sekali. Hari ini mereka berenang bersama. Berapa hari lagi mereka berenang bersama lagi?",
+        "sorotan": [{"teks": "3 hari", "warna": "a"}, {"teks": "4 hari", "warna": "b"}],
+        "konsep": "KPK", "bilangan": [3, 4], "jawaban": 12, "satuan": "hari"
+      },
+      {
+        "id": "l4d",
+        "teks": "Seutas pita merah 18 m dan pita biru 30 m akan dipotong menjadi potongan-potongan yang sama panjang, sepanjang mungkin, tanpa sisa. Berapa meter panjang setiap potongan?",
+        "sorotan": [{"teks": "18 m", "warna": "a"}, {"teks": "30 m", "warna": "b"}],
+        "konsep": "FPB", "bilangan": [18, 30], "jawaban": 6, "satuan": "m"
+      },
+      {
+        "id": "l4e",
+        "teks": "Bus jurusan A berangkat dari terminal setiap 12 menit dan bus jurusan B setiap 16 menit. Pukul 06.00 keduanya berangkat bersamaan. Berapa menit kemudian keduanya berangkat bersamaan lagi?",
+        "sorotan": [{"teks": "12 menit", "warna": "a"}, {"teks": "16 menit", "warna": "b"}],
+        "konsep": "KPK", "bilangan": [12, 16], "jawaban": 48, "satuan": "menit"
+      }
+    ],
+    "5": [
+      {
+        "id": "l5a",
+        "teks": "Perpustakaan sekolah buka pukul 07.00 dan memiliki 1.200 buku. Pak Budi menyiram tanaman di perpustakaan setiap 6 hari, sedangkan Bu Rina mengganti taplak meja setiap 9 hari. Hari ini keduanya bertugas bersamaan. Berapa hari lagi keduanya bertugas bersamaan?",
+        "info": ["Perpustakaan buka pukul 07.00", "Ada 1.200 buku", "Pak Budi menyiram setiap 6 hari", "Bu Rina mengganti taplak setiap 9 hari"],
+        "info_relevan": [2, 3],
+        "konsep": "KPK", "bilangan": [6, 9], "jawaban": 18, "satuan": "hari"
+      },
+      {
+        "id": "l5b",
+        "teks": "Kelas 7B terdiri atas 32 siswa. Untuk acara bakti sosial, kelas itu mengumpulkan 45 buku tulis dan 60 pensil yang dibagikan ke beberapa paket sama banyak, dengan jumlah paket sebanyak-banyaknya. Harga satu buku tulis Rp4.500. Berapa paket yang dapat dibuat?",
+        "info": ["Kelas 7B terdiri atas 32 siswa", "Ada 45 buku tulis", "Ada 60 pensil", "Harga buku tulis Rp4.500"],
+        "info_relevan": [1, 2],
+        "konsep": "FPB", "bilangan": [45, 60], "jawaban": 15, "satuan": "paket"
+      },
+      {
+        "id": "l5c",
+        "teks": "Sebuah toko roti memiliki 5 karyawan. Toko menerima kiriman tepung setiap 8 hari dan kiriman gula setiap 10 hari. Satu karung tepung beratnya 25 kg. Hari ini kedua kiriman datang bersamaan. Berapa hari lagi kedua kiriman datang bersamaan?",
+        "info": ["Toko punya 5 karyawan", "Tepung dikirim setiap 8 hari", "Gula dikirim setiap 10 hari", "Satu karung tepung 25 kg"],
+        "info_relevan": [1, 2],
+        "konsep": "KPK", "bilangan": [8, 10], "jawaban": 40, "satuan": "hari"
+      },
+      {
+        "id": "l5d",
+        "teks": "Tiga alarm di laboratorium berbunyi setiap 4 menit, 6 menit, dan 9 menit. Laboratorium itu memiliki 20 meja. Pukul 08.00 ketiga alarm berbunyi bersamaan. Berapa menit kemudian ketiganya berbunyi bersamaan lagi?",
+        "info": ["Alarm 1 setiap 4 menit", "Alarm 2 setiap 6 menit", "Alarm 3 setiap 9 menit", "Ada 20 meja"],
+        "info_relevan": [0, 1, 2],
+        "konsep": "KPK", "bilangan": [4, 6, 9], "jawaban": 36, "satuan": "menit"
+      },
+      {
+        "id": "l5e",
+        "teks": "Rudi membeli 3 kotak kelereng seharga Rp15.000. Ia ingin menyusun kelereng merah dalam baris berisi 12 butir dan kelereng biru dalam baris berisi 15 butir, agar jumlah kedua warna sama dan sesedikit mungkin. Berapa butir kelereng setiap warna?",
+        "info": ["Rudi membeli 3 kotak", "Harganya Rp15.000", "Baris merah berisi 12 butir", "Baris biru berisi 15 butir"],
+        "info_relevan": [2, 3],
+        "konsep": "KPK", "bilangan": [12, 15], "jawaban": 60, "satuan": "butir"
+      }
+    ]
+  }
+}

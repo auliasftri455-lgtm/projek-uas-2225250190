@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Belajar KPK langkah demi langkah untuk siswa SMP" />
+    <meta name="theme-color" content="#2457c5" />
+    <title>KPK Langkah demi Langkah</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/assets/ikon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/ikon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body class="tanpa-nav">
+    <header class="kepala">
+      <button class="tombol-ikon" id="tombol-kembali" aria-label="Kembali" hidden>←</button>
+      <h1 id="judul">KPK Langkah demi Langkah</h1>
+      <span id="aksi-kepala"></span>
+    </header>
+    <main id="app" tabindex="-1">
+      <noscript>Aplikasi ini membutuhkan JavaScript.</noscript>
+    </main>
+    <nav class="nav-bawah" aria-label="Menu utama">
+      <a href="#/beranda" data-rute="beranda"><span class="ikon" aria-hidden="true">🏠</span>Beranda</a>
+      <a href="#/belajar" data-rute="belajar"><span class="ikon" aria-hidden="true">📖</span>Belajar</a>
+      <a href="#/latihan" data-rute="latihan"><span class="ikon" aria-hidden="true">🎯</span>Latihan</a>
+      <a href="#/tes" data-rute="tes"><span class="ikon" aria-hidden="true">📝</span>Tes</a>
+      <a href="#/catatan" data-rute="catatan"><span class="ikon" aria-hidden="true">📒</span>Catatan</a>
+    </nav>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
