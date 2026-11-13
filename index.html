@@ -64,3 +64,444 @@
 
         <h3 class="text-sm font-bold text-slate-800 mb-2">2. Sifat Akar Berdasarkan Nilai Diskriminan (D)</h3>
         <ul class="list-disc list-inside text-sm text-slate-600 space-y-1.5 mb-5">
+          <li><strong>D &gt; 0 :</strong> Memiliki dua akar real yang berbeda (x₁ ≠ x₂).</li>
+          <li><strong>D = 0 :</strong> Memiliki satu akar real kembar (x₁ = x₂).</li>
+          <li><strong>D &lt; 0 :</strong> Tidak memiliki akar real (akar imajiner/kompleks).</li>
+        </ul>
+
+        <div class="bg-indigo-50/70 border border-indigo-100 p-4 rounded-lg text-sm">
+          <p class="font-bold text-indigo-900 mb-1">Contoh Pembahasan:</p>
+          <p class="text-slate-700 mb-1">Tentukan akar-akar dari persamaan <strong>x² - 5x + 6 = 0</strong>.</p>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Diketahui: a = 1, b = -5, c = 6.<br />
+            D = (-5)² - 4(1)(6) = 25 - 24 = 1 (D &gt; 0, dua akar real berbeda).<br />
+            x₁ = (5 + √1) / 2 = 6 / 2 = <strong>3</strong><br />
+            x₂ = (5 - √1) / 2 = 4 / 2 = <strong>2</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- Materi Deret Aritmatika -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <span class="inline-block text-xs font-semibold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-md mb-2">
+          Topik 2
+        </span>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">Barisan & Deret Aritmatika</h2>
+        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+          Barisan aritmatika adalah barisan bilangan dengan selisih (beda) yang tetap antara dua suku yang berurutan. Sedangkan deret aritmatika adalah penjumlahan dari suku-suku pada barisan aritmatika.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+          <div class="bg-slate-50 border border-slate-200 p-4 rounded-lg">
+            <p class="text-xs font-bold uppercase text-slate-500 mb-1">Rumus Suku ke-n (Uₙ)</p>
+            <p class="font-mono text-sm font-semibold text-indigo-700">Uₙ = a + (n - 1)b</p>
+            <p class="text-xs text-slate-500 mt-1">a = suku pertama, b = beda (U₂ - U₁)</p>
+          </div>
+          <div class="bg-slate-50 border border-slate-200 p-4 rounded-lg">
+            <p class="text-xs font-bold uppercase text-slate-500 mb-1">Rumus Jumlah n Suku (Sₙ)</p>
+            <p class="font-mono text-sm font-semibold text-indigo-700">Sₙ = (n / 2) × (2a + (n - 1)b)</p>
+            <p class="text-xs text-slate-500 mt-1">atau Sₙ = (n / 2) × (a + Uₙ)</p>
+          </div>
+        </div>
+
+        <div class="bg-indigo-50/70 border border-indigo-100 p-4 rounded-lg text-sm">
+          <p class="font-bold text-indigo-900 mb-1">Contoh Pembahasan:</p>
+          <p class="text-slate-700 mb-1">Diketahui barisan: <strong>2, 5, 8, 11, ...</strong> Tentukan U₁₀ dan S₁₀!</p>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Diketahui: a = 2, b = 5 - 2 = 3, n = 10.<br />
+            U₁₀ = 2 + (10 - 1)(3) = 2 + 27 = <strong>29</strong><br />
+            S₁₀ = (10 / 2) × (2 + 29) = 5 × 31 = <strong>155</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 2: KALKULATOR INTERAKTIF ==================== -->
+    <section id="tab-kalkulator" class="space-y-6 hidden">
+      <!-- Kalkulator Persamaan Kuadrat -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <h2 class="text-lg font-bold text-slate-900 mb-1">Analisis Persamaan Kuadrat</h2>
+        <p class="text-sm text-slate-500 mb-5">Bentuk umum: ax² + bx + c = 0</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Nilai a</label>
+            <input type="number" id="val-a" value="1" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Nilai b</label>
+            <input type="number" id="val-b" value="-5" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Nilai c</label>
+            <input type="number" id="val-c" value="6" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+        </div>
+
+        <button onclick="hitungKuadrat()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2.5 rounded-lg transition text-sm">
+          Hitung Akar & Diskriminan
+        </button>
+
+        <div id="hasil-kuadrat" class="mt-5 p-4 bg-slate-100 rounded-lg text-sm space-y-1.5 hidden"></div>
+      </div>
+
+      <!-- Kalkulator Deret Aritmatika -->
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <h2 class="text-lg font-bold text-slate-900 mb-1">Generator Deret Aritmatika</h2>
+        <p class="text-sm text-slate-500 mb-5">Menghitung suku ke-n (Uₙ) dan jumlah n suku pertama (Sₙ)</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Suku Pertama (a)</label>
+            <input type="number" id="deret-a" value="2" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Beda (b)</label>
+            <input type="number" id="deret-b" value="3" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-semibold uppercase text-slate-600 mb-1">Banyak Suku (n)</label>
+            <input type="number" id="deret-n" value="10" min="1" max="100" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+        </div>
+
+        <button onclick="hitungDeret()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2.5 rounded-lg transition text-sm">
+          Generate Deret
+        </button>
+
+        <div id="hasil-deret" class="mt-5 p-4 bg-slate-100 rounded-lg text-sm space-y-1.5 hidden"></div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: LATIHAN SOAL ==================== -->
+    <section id="tab-latihan" class="space-y-6 hidden">
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <h2 class="text-xl font-bold text-slate-900 mb-1">Latihan Soal Mandiri</h2>
+        <p class="text-sm text-slate-500 mb-6">Masukkan jawabanmu pada kolom yang tersedia, lalu klik <strong>Periksa Jawaban</strong> untuk melihat pembahasan lengkapnya.</p>
+
+        <div id="container-latihan" class="space-y-6"></div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 4: KUIS EVALUASI ==================== -->
+    <section id="tab-kuis" class="space-y-6 hidden">
+      <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6 border-b border-slate-100 pb-4">
+          <div>
+            <h2 class="text-xl font-bold text-slate-900">Kuis Evaluasi Pemahaman</h2>
+            <p class="text-sm text-slate-500">Pilih satu jawaban yang paling tepat dari 5 soal berikut.</p>
+          </div>
+          <span id="badge-skor" class="hidden self-start sm:self-center bg-indigo-100 text-indigo-800 font-bold text-sm px-4 py-1.5 rounded-full">
+            Skor: 0 / 100
+          </span>
+        </div>
+
+        <div id="container-kuis" class="space-y-6"></div>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <button onclick="selesaiKuis()" id="btn-submit-kuis" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-2.5 rounded-lg transition text-sm">
+            Kumpulkan & Lihat Nilai
+          </button>
+          <button onclick="resetKuis()" id="btn-reset-kuis" class="hidden bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold px-5 py-2.5 rounded-lg transition text-sm">
+            Ulangi Kuis
+          </button>
+        </div>
+
+        <div id="hasil-kuis-box" class="mt-6 p-5 rounded-xl border hidden"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
+    Projek UAS &bull; NIM 2225250190 &bull; Materi, Kalkulator, Latihan & Kuis Matematika
+  </footer>
+
+  <script>
+    // ==================== NAVIGASI TAB ====================
+    function switchTab(tabName) {
+      const tabs = ['materi', 'kalkulator', 'latihan', 'kuis'];
+      tabs.forEach(t => {
+        document.getElementById('tab-' + t).classList.add('hidden');
+        const btn = document.getElementById('nav-' + t);
+        btn.classList.remove('bg-indigo-800', 'text-white');
+        btn.classList.add('text-indigo-100');
+      });
+
+      document.getElementById('tab-' + tabName).classList.remove('hidden');
+      const activeBtn = document.getElementById('nav-' + tabName);
+      activeBtn.classList.add('bg-indigo-800', 'text-white');
+      activeBtn.classList.remove('text-indigo-100');
+    }
+
+    // ==================== LOGIKA KALKULATOR ====================
+    function hitungKuadrat() {
+      const a = parseFloat(document.getElementById('val-a').value);
+      const b = parseFloat(document.getElementById('val-b').value);
+      const c = parseFloat(document.getElementById('val-c').value);
+      const output = document.getElementById('hasil-kuadrat');
+      output.classList.remove('hidden');
+
+      if (isNaN(a) || isNaN(b) || isNaN(c) || a === 0) {
+        output.innerHTML = '<p class="text-red-600 font-semibold">Nilai a tidak boleh 0 dan semua input harus berupa angka.</p>';
+        return;
+      }
+
+      const D = (b * b) - (4 * a * c);
+      let akarInfo = '';
+
+      if (D > 0) {
+        const x1 = ((-b + Math.sqrt(D)) / (2 * a)).toFixed(3).replace(/\.000$/, '');
+        const x2 = ((-b - Math.sqrt(D)) / (2 * a)).toFixed(3).replace(/\.000$/, '');
+        akarInfo = `<p><strong>Jenis Akar:</strong> Dua akar real berbeda (D &gt; 0)</p>
+                    <p><strong>x₁:</strong> ${x1} &nbsp;|&nbsp; <strong>x₂:</strong> ${x2}</p>`;
+      } else if (D === 0) {
+        const x = (-b / (2 * a)).toFixed(3).replace(/\.000$/, '');
+        akarInfo = `<p><strong>Jenis Akar:</strong> Satu akar real kembar (D = 0)</p>
+                    <p><strong>x₁ = x₂:</strong> ${x}</p>`;
+      } else {
+        const realPart = (-b / (2 * a)).toFixed(3).replace(/\.000$/, '');
+        const imagPart = (Math.sqrt(-D) / (2 * a)).toFixed(3).replace(/\.000$/, '');
+        akarInfo = `<p><strong>Jenis Akar:</strong> Akar imajiner / kompleks (D &lt; 0)</p>
+                    <p><strong>x₁:</strong> ${realPart} + ${imagPart}i &nbsp;|&nbsp; <strong>x₂:</strong> ${realPart} - ${imagPart}i</p>`;
+      }
+
+      output.innerHTML = `
+        <p><strong>Persamaan:</strong> ${a}x² ${b >= 0 ? '+ ' + b : '- ' + Math.abs(b)}x ${c >= 0 ? '+ ' + c : '- ' + Math.abs(c)} = 0</p>
+        <p><strong>Diskriminan (D):</strong> ${D}</p>
+        ${akarInfo}
+      `;
+    }
+
+    function hitungDeret() {
+      const a = parseFloat(document.getElementById('deret-a').value);
+      const b = parseFloat(document.getElementById('deret-b').value);
+      const n = parseInt(document.getElementById('deret-n').value);
+      const output = document.getElementById('hasil-deret');
+      output.classList.remove('hidden');
+
+      if (isNaN(a) || isNaN(b) || isNaN(n) || n < 1) {
+        output.innerHTML = '<p class="text-red-600 font-semibold">Masukkan angka yang valid (n minimal 1).</p>';
+        return;
+      }
+
+      const suku = [];
+      for (let i = 0; i < n; i++) {
+        suku.push(a + i * b);
+      }
+
+      const un = a + (n - 1) * b;
+      const sn = (n / 2) * (2 * a + (n - 1) * b);
+
+      output.innerHTML = `
+        <p><strong>Suku ke-${n} (Uₙ):</strong> ${un}</p>
+        <p><strong>Jumlah ${n} suku pertama (Sₙ):</strong> ${sn}</p>
+        <p><strong>Barisan:</strong> ${suku.join(', ')}</p>
+      `;
+    }
+
+    // ==================== DATA & LOGIKA LATIHAN SOAL ====================
+    const dataLatihan = [
+      {
+        id: 1,
+        topik: "Persamaan Kuadrat",
+        soal: "Tentukan nilai diskriminan (D) dari persamaan kuadrat 2x² + 4x - 6 = 0.",
+        kunci: 64,
+        pembahasan: "Diketahui a = 2, b = 4, c = -6. Maka D = b² - 4ac = (4)² - 4(2)(-6) = 16 + 48 = 64."
+      },
+      {
+        id: 2,
+        topik: "Persamaan Kuadrat",
+        soal: "Salah satu akar dari persamaan x² - 7x + 12 = 0 adalah 3. Berapakah nilai akar lainnya?",
+        kunci: 4,
+        pembahasan: "Faktorkan x² - 7x + 12 = 0 menjadi (x - 3)(x - 4) = 0. Diperoleh x₁ = 3 dan x₂ = 4."
+      },
+      {
+        id: 3,
+        topik: "Deret Aritmatika",
+        soal: "Diketahui barisan aritmatika: 4, 9, 14, 19, ... Berapakah nilai suku ke-12 (U₁₂)?",
+        kunci: 59,
+        pembahasan: "Diketahui a = 4 dan b = 9 - 4 = 5. Maka U₁₂ = a + (12 - 1)b = 4 + 11(5) = 4 + 55 = 59."
+      },
+      {
+        id: 4,
+        topik: "Deret Aritmatika",
+        soal: "Hitunglah jumlah 8 suku pertama (S₈) dari deret aritmatika 3 + 7 + 11 + 15 + ...",
+        kunci: 136,
+        pembahasan: "Diketahui a = 3, b = 4, n = 8. S₈ = (8/2) × (2(3) + (8 - 1)(4)) = 4 × (6 + 28) = 4 × 34 = 136."
+      }
+    ];
+
+    function renderLatihan() {
+      const container = document.getElementById('container-latihan');
+      container.innerHTML = dataLatihan.map((item, idx) => `
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/60">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded">${item.topik}</span>
+            <span class="text-xs text-slate-400">Soal #${idx + 1}</span>
+          </div>
+          <p class="text-sm font-medium text-slate-800 mb-3">${item.soal}</p>
+          <div class="flex flex-col sm:flex-row gap-2 sm:items-center">
+            <input type="number" id="input-latihan-${item.id}" placeholder="Jawaban angka..."
+              class="w-full sm:w-48 px-3 py-2 text-sm border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-white" />
+            <button onclick="cekLatihan(${item.id})"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition">
+              Periksa Jawaban
+            </button>
+          </div>
+          <div id="feedback-latihan-${item.id}" class="mt-3 text-xs sm:text-sm p-3 rounded-lg hidden"></div>
+        </div>
+      `).join('');
+    }
+
+    function cekLatihan(id) {
+      const soalObj = dataLatihan.find(x => x.id === id);
+      const userVal = parseFloat(document.getElementById(`input-latihan-${id}`).value);
+      const feedback = document.getElementById(`feedback-latihan-${id}`);
+      feedback.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-800', 'border-emerald-200', 'bg-rose-50', 'text-rose-800', 'border-rose-200', 'border');
+
+      if (isNaN(userVal)) {
+        feedback.classList.add('bg-amber-50', 'text-amber-800', 'border', 'border-amber-200');
+        feedback.innerHTML = 'Silakan masukkan angka jawaban terlebih dahulu.';
+        return;
+      }
+
+      if (userVal === soalObj.kunci) {
+        feedback.classList.add('bg-emerald-50', 'text-emerald-800', 'border', 'border-emerald-200');
+        feedback.innerHTML = `<p class="font-bold mb-1">✓ Jawaban Benar! (${soalObj.kunci})</p><p>${soalObj.pembahasan}</p>`;
+      } else {
+        feedback.classList.add('bg-rose-50', 'text-rose-800', 'border', 'border-rose-200');
+        feedback.innerHTML = `<p class="font-bold mb-1">✕ Kurang Tepat. Jawaban yang benar adalah ${soalObj.kunci}.</p><p>${soalObj.pembahasan}</p>`;
+      }
+    }
+
+    // ==================== DATA & LOGIKA KUIS ====================
+    const dataKuis = [
+      {
+        q: "1. Jika nilai diskriminan persamaan kuadrat D < 0, maka sifat akar-akarnya adalah...",
+        opsi: [
+          "Dua akar real berbeda",
+          "Satu akar real kembar",
+          "Tidak memiliki akar real (imajiner)",
+          "Akar-akarnya selalu bilangan bulat"
+        ],
+        benar: 2,
+        ket: "Jika D < 0, nilai di dalam akar pada rumus ABC bernilai negatif sehingga akarnya berupa bilangan imajiner/kompleks."
+      },
+      {
+        q: "2. Akar-akar persamaan kuadrat x² + 2x - 15 = 0 adalah...",
+        opsi: [
+          "x₁ = 3 dan x₂ = -5",
+          "x₁ = -3 dan x₂ = 5",
+          "x₁ = 3 dan x₂ = 5",
+          "x₁ = -3 dan x₂ = -5"
+        ],
+        benar: 0,
+        ket: "x² + 2x - 15 = (x - 3)(x + 5) = 0, sehingga x₁ = 3 dan x₂ = -5."
+      },
+      {
+        q: "3. Diketahui barisan aritmatika dengan suku pertama 6 dan beda 4. Suku ke-7 barisan tersebut adalah...",
+        opsi: [
+          "26",
+          "30",
+          "34",
+          "28"
+        ],
+        benar: 1,
+        ket: "U₇ = a + 6b = 6 + 6(4) = 6 + 24 = 30."
+      },
+      {
+        q: "4. Jumlah 10 suku pertama dari deret bilangan asli 1 + 2 + 3 + ... + 10 adalah...",
+        opsi: [
+          "45",
+          "50",
+          "55",
+          "60"
+        ],
+        benar: 2,
+        ket: "S₁₀ = (10 / 2) × (1 + 10) = 5 × 11 = 55."
+      },
+      {
+        q: "5. Persamaan kuadrat yang memiliki akar-akar x₁ = 2 dan x₂ = 5 adalah...",
+        opsi: [
+          "x² + 7x + 10 = 0",
+          "x² - 7x + 10 = 0",
+          "x² - 3x - 10 = 0",
+          "x² + 3x - 10 = 0"
+        ],
+        benar: 1,
+        ket: "(x - 2)(x - 5) = x² - 5x - 2x + 10 = x² - 7x + 10 = 0."
+      }
+    ];
+
+    function renderKuis() {
+      const container = document.getElementById('container-kuis');
+      container.innerHTML = dataKuis.map((item, qIdx) => `
+        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50/50" id="blok-kuis-${qIdx}">
+          <p class="text-sm font-semibold text-slate-900 mb-3">${item.q}</p>
+          <div class="space-y-2">
+            ${item.opsi.map((opt, oIdx) => `
+              <label class="flex items-center gap-3 p-2.5 rounded-lg border border-slate-200 bg-white hover:bg-indigo-50/50 cursor-pointer text-sm transition">
+                <input type="radio" name="kuis-q-${qIdx}" value="${oIdx}" class="text-indigo-600 focus:ring-indigo-500" />
+                <span>${opt}</span>
+              </label>
+            `).join('')}
+          </div>
+          <div id="review-kuis-${qIdx}" class="mt-3 text-xs p-3 rounded-lg hidden"></div>
+        </div>
+      `).join('');
+    }
+
+    function selesaiKuis() {
+      let benarCount = 0;
+
+      dataKuis.forEach((item, qIdx) => {
+        const selected = document.querySelector(`input[name="kuis-q-${qIdx}"]:checked`);
+        const reviewBox = document.getElementById(`review-kuis-${qIdx}`);
+        reviewBox.classList.remove('hidden', 'bg-emerald-50', 'text-emerald-800', 'bg-rose-50', 'text-rose-800');
+
+        if (selected && parseInt(selected.value) === item.benar) {
+          benarCount++;
+          reviewBox.classList.add('bg-emerald-50', 'text-emerald-800');
+          reviewBox.innerHTML = `<strong>✓ Benar!</strong> ${item.ket}`;
+        } else {
+          reviewBox.classList.add('bg-rose-50', 'text-rose-800');
+          reviewBox.innerHTML = `<strong>✕ Salah.</strong> Jawaban benar: <em>${item.opsi[item.benar]}</em>. ${item.ket}`;
+        }
+      });
+
+      const skor = Math.round((benarCount / dataKuis.length) * 100);
+      const badge = document.getElementById('badge-skor');
+      badge.textContent = `Skor: ${skor} / 100`;
+      badge.classList.remove('hidden');
+
+      const hasilBox = document.getElementById('hasil-kuis-box');
+      hasilBox.classList.remove('hidden', 'bg-emerald-50', 'border-emerald-200', 'text-emerald-900', 'bg-amber-50', 'border-amber-200', 'text-amber-900');
+
+      if (skor >= 80) {
+        hasilBox.classList.add('bg-emerald-50', 'border-emerald-200', 'text-emerald-900');
+        hasilBox.innerHTML = `<p class="font-bold text-base">Luar Biasa! Nilai Kamu: ${skor}</p><p class="text-sm mt-1">Kamu menjawab benar ${benarCount} dari ${dataKuis.length} soal.</p>`;
+      } else {
+        hasilBox.classList.add('bg-amber-50', 'border-amber-200', 'text-amber-900');
+        hasilBox.innerHTML = `<p class="font-bold text-base">Nilai Kamu: ${skor}</p><p class="text-sm mt-1">Kamu menjawab benar ${benarCount} dari ${dataKuis.length} soal. Cek pembahasan di setiap nomor lalu coba ulangi kuis!</p>`;
+      }
+
+      document.getElementById('btn-submit-kuis').classList.add('hidden');
+      document.getElementById('btn-reset-kuis').classList.remove('hidden');
+    }
+
+    function resetKuis() {
+      renderKuis();
+      document.getElementById('badge-skor').classList.add('hidden');
+      document.getElementById('hasil-kuis-box').classList.add('hidden');
+      document.getElementById('btn-submit-kuis').classList.remove('hidden');
+      document.getElementById('btn-reset-kuis').classList.add('hidden');
+    }
+
+    // Inisialisasi saat halaman dimuat
+    renderLatihan();
+    renderKuis();
+  </script>
+</body>
+</html>
